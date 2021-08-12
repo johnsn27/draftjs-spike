@@ -40,10 +40,10 @@ class RichTextEditor extends React.Component {
 	render() {
 		return (
 			<div className="editorContainer">
-				<button onClick={this.onBoldClick}>
+				<button onClick={this.onBoldClick} label="bold">
 					<b>B</b>
 				</button>
-				<button onClick={this.onItalicClick}>
+				<button onClick={this.onItalicClick} label="italic">
 					<em>I</em>
 				</button>
 				<div className="editors">
