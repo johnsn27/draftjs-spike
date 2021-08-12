@@ -5,7 +5,7 @@ class RichTextEditor extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			editorState: EditorState.createEmpty()
+			editorState: EditorState.createWithText("Google employees in the US who opt to work from home permanently may get a pay cut. The technology giant has developed a pay calculator that lets employees see the effects of working remotely or moving offices. Some remote employees, especially those with a long commute, could have their pay cut without changing address. Google has no plans at this time to implement the policy in the UK. Employees in many businesses have proved that working from home permanently is viable during the Covid pandemic. Many companies are looking ahead to how employees will work as the pandemic recedes, even as the US continues to battle the Delta variant of the disease. Silicon Valley firms, some of which are keen to get employees back to their desks, are experimenting with employee pay structures. Big tech companies including Microsoft, Facebook, and Twitter have offered less pay for employees based in locations where it is more inexpensive to live. But smaller firms such as Reddit and Zillow have said they will pay the same no matter where employees are based, saying that this improves diversity.")
 		};
 	}
 
@@ -51,7 +51,6 @@ class RichTextEditor extends React.Component {
 						editorState={this.state.editorState}
 						handleKeyCommand={this.handleKeyCommand}
 						onChange={this.onChange}
-						// placeholder="Write something!"
 					/>
 				</div>
 			</div>
